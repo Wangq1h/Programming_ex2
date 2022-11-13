@@ -1,0 +1,32 @@
+result=[];
+tau=1e-5;
+load("修正后的第一时序.mat")
+load("时序2.mat")
+%%
+for i=1:200
+    Tadj1=T1adj(find(T1adj<=i*180 & T1adj>(i-1)*180));
+    Tadj2=T2(find(T2<=i*180 & T2>(i-1)*180));
+    N1=length(Tadj1);
+    N2=length(Tadj2);
+    B=Tadj1'*ones(1,N2);
+    C=ones(N1,1)*Tadj2;
+     delta=B-C;
+    [row,col]=find(abs(delta)<=tau);
+     m=find(abs(delta)<=tau);
+    row1=row(find(delta(m)<0));
+    col1=col(find(delta(m)>=0));
+    result=[result,Tadj1(row1),Tadj2(col1)];
+end
+%%
+%N1=length(T1adj);
+%N2=length(T2);
+%part=10;
+%B=T2'*ones(1,part);
+%for j=1:fix(N1/part)
+   
+    %C=ones(N2,1)*T1adj(part*(j-1)+1:part*j);
+    %delta=B-C;
+    %clear C
+    %[row,col]=find(abs(delta)<tau);
+    %result=[result,T2(col)];
+%end

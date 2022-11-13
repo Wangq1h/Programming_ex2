@@ -1,0 +1,22 @@
+tau=0.000001;
+lambda1=100;
+lambda2=200;
+interval2=0;
+N=200*lambda2;
+while sum(interval2)<=10*3600
+interval1=exprnd(1/lambda1,1,N); 
+interval2=exprnd(1/lambda2,1,N);
+N=N+200*lambda2;
+end
+T1=zeros(length(interval2),1);
+T2=zeros(length(interval2),1);
+for i=1:length(interval1)
+    T1(1,i)=sum(interval1(1:i));
+    T2(1,i)=sum(interval2(1:i));
+end
+for j=1:fix(N/500)
+B=T1*ones(500*(j-1)+1,500*j);
+C=T2*ones(500*(j-1)+1,500*j);
+delta=abs(B-C);
+[row,col]=find(delta<tau);
+result=T1(row);
