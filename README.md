@@ -215,7 +215,7 @@ end
 
 * 由于系统运行在纳秒级别，虽然不能理解，但确实如果判断语句为大于等于，就会使得可瘫痪系统在临界状态时记录的数据偏大，可能是精度不够导致的略小于死时间的信号也被记录。
 
-![](C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\01.jpg)
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/01.jpg)
 
 ## Appendix
 
