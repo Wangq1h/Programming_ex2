@@ -100,9 +100,9 @@ $$
 \lambda=\lambda_1(1-e^{-\lambda_2 \tau})+\lambda_2(1-e^{-\lambda_1 \tau})\approx0.3997001666\\
 u_r\approx0.61\%
 $$
-<img src="C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\02.jpg" style="zoom:67%;" />
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/02.jpg)
 
-<img src="C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\5.1.jpg" style="zoom:67%;" />
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/5.1.jpg)
 
 坦诚地讲，这个分布并不令我满意。尤其需要注意到，在间隔时间较大的时候，分布甚至出现了紊乱。这与次数不够导致的误差不同，是上述代码优化环节的系统误差。 
 
@@ -147,15 +147,15 @@ E(Y)=27.999989179785775min\\
 E(W)=2.999728458182906min
 $$
 
-<img src="C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\4.jpg" style="zoom:67%;" />
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/4.jpg)
 
 甲等车时间分布为$f(t)=\frac13 e^{-\frac t3}$
 
-<img src="C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\2.jpg" style="zoom:67%;" />
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/2.jpg)
 
 甲花费总时间的分布可以看作快车和慢车分别代表的两个指数分布的叠加，但是两者的权重是$1:3$
 
-<img src="C:\Users\wqh13\Desktop\概率与统计\Programming_ex2\pic\3.jpg" style="zoom:67%;" />
+![](https://github.com/Wangq1h/Programming_ex2/blob/master/pic/3.jpg)
 
 乙所花费的时间分布就是简单的快车指数分布。
 
